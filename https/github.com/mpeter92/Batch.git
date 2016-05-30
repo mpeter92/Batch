@@ -1,0 +1,3 @@
+::script to find mappings with  the word documents and output the result along with the computername to the central location
+::
+for /f "tokens=*" %A IN ('net use ^| findstr /i documents') do echo %computername% %A >> \\servername\share\findDocMap.txt
