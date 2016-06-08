@@ -1,0 +1,1 @@
+for /f %G IN (\\ieatw1-d\temp\smithm\scripts\vmsas.txt) do c:\pstools\psexec \\%G -c net localgroup administrators /add "username"
