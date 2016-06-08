@@ -1,1 +1,3 @@
+::add pcs to a text file and amend the filepath as needed.
+
 for /f %G IN (\\server1\share\pcs.txt) do c:\pstools\psexec \\%G -c net localgroup administrators /add "username"
