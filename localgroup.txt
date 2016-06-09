@@ -1,3 +1,6 @@
+::This file adds the user to the local admin group of the pcs in the file.
 ::add pcs to a text file and amend the filepath as needed.
 
-for /f %G IN (\\server1\share\pcs.txt) do c:\pstools\psexec \\%G -c net localgroup administrators /add "username"
+Set /p _file="Please enter the full path to the file with the list of pcs to amend: "
+Set /p name="Please enter the username: "
+for /f %%G IN (\\server1\share\pcs.txt) do c:\pstools\psexec \\%%G -c net localgroup administrators /add "username"
