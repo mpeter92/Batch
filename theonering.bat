@@ -1,9 +1,9 @@
 ::This script was written By Michael Smith
-::michael.smith@aviva.com
+
 ::
 ::26/05/16
 ::
-::Post install for Aviva Health VMs.
+::
 ::
 ::
 ::
@@ -17,7 +17,7 @@ slmgr /upk
 
 
 :: Install MAK product ID
-slmgr /ipk CYTG8-F2MW6-FH7VG-3XD3T-4H4MC
+slmgr /ipk 
 
 
 ::Update DNS
